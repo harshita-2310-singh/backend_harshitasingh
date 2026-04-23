@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    
+   <h1>Name:  <%=stv.name%></h1>
+   <h1> Rollno. <%=stv.rollno%></h1>
+    <h1> email: <%=stv.email%></h1>
+    <h1> age: <%=stv.age%></h1>
+    <!-- <h1> hobbies <%=stv.hobbies%></h1>//stv.hobbies.length -->
+     <!-- <%stv.hobbies.forEach((hobb)=>{%>
+        <%=hobb%>
+     <%})%> -->
+     <% for(let i=0;i<stv.hobbies.length;i++){%>
+        <span><%=stv.hobbies[i]%><span>
+    <% }%>
+</body>
+</html>
